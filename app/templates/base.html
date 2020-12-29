@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+
+<link rel="shortcut icon" href="/static/img/focus.png" type="image/png">
+<link rel="stylesheet" href="../static/css/base.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-light" style="background-color: #a6a297;">
+         <a class="navbar-brand" href="/">
+            <img src="/static/img/brand.png" width="30" height="30" class="d-inline-block align-top" alt="">
+             Anastasiia's Portfolio
+         </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Photos<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/anastasiia_just_anastasiia/">Instagram</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/registerPage">Register</a>
+          </li>
+        </ul>
+
+        <span class="navbar-text">
+          Borders only in our head...
+        </span>
+
+      </div>
+    </nav>
+
+
+<div class="container">
+    {% block content %}
+
+    {% endblock content %}
+</div>
+
+<footer class="text" style="background-color: #a6a297; text-align: center; padding: 10px; margin 20px;  bottom: 0; width:100%;">
+    by Anastasiia Davydenko
+</footer>
+
+
+</body>
+</html>
